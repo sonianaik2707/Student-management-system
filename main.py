@@ -1,3 +1,4 @@
+import student
 #main menu function()
 def main(user = '>'):
     print('''  ====MAIN MENU====\n1. Student Record\n2. Compute Marks
@@ -26,7 +27,7 @@ while user != '':
             if detail_1 == '>':
                 student_record()
             elif detail_1 == '1':
-                pass
+                student.add_student()
             elif detail_1 == '2':
                 pass
             elif detail_1 == '3':
