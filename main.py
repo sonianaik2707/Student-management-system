@@ -1,5 +1,7 @@
 import student
 #main menu function()
+
+student.create_csv()
 def main(user = '>'):
     print('''  ====MAIN MENU====\n1. Student Record\n2. Compute Marks
     \n(Press Enter to Exit)''')
@@ -18,7 +20,6 @@ main()
 user = input('> ')
 
 while user != '':
-
     #if student record is selected 
     if user == '1':
         student_record()
@@ -33,7 +34,7 @@ while user != '':
             elif detail_1 == '3':
                 pass
             elif detail_1 == '4':
-                pass
+                student.delete_student()
             else:
                 print('Invalid option')
             detail_1 = input("> ")
